@@ -1,0 +1,70 @@
+# ISAA 2026 学术会议网站
+
+## 项目概述
+
+第十八届国际算法与应用研讨会（ISAA 2026）官方网站。支持中英双语、响应式设计，纯静态文件，无需任何后端服务器，开箱即用。
+
+## 页面结构
+
+| 页面 | 文件 |
+|------|------|
+| 首页 | index.html |
+| 会议介绍 | about.html |
+| 组织委员会 | organization.html |
+| 征文通知 | call-for-papers.html |
+| 会议日程 | program.html |
+| 大会报告人 | speakers.html |
+| 会议注册 | registration.html |
+| 联系方式 | contact.html |
+
+## 技术栈
+
+- **纯 HTML/CSS/JS**：无需 Node.js、npm、构建工具
+- **零依赖**：所有功能用原生 JavaScript 实现
+- **中英双语**：通过 localStorage 记忆语言偏好，所有文本通过 `js/i18n.js` 统一管理
+- **响应式设计**：自动适配电脑、平板、手机
+
+## 如何使用
+
+### 方法 1：直接打开（最简单）
+双击 `index.html` 即可在浏览器中预览所有页面。
+
+### 方法 2：用 Python 启动
+```bash
+cd isar2026
+python3 -m http.server 8080
+# 打开浏览器访问 http://localhost:8080
+```
+
+## 部署方案
+
+### GitHub Pages（免费）
+1. 在 GitHub 创建仓库，上传 isar2026 文件夹内容
+2. Settings → Pages → 选择 main 分支 → Save
+3. 获得 `https://用户名.github.io/仓库名/` 网址
+
+### Vercel / Netlify（免费）
+1. 导入 GitHub 仓库或直接拖拽文件夹
+2. 自动部署，获得独立域名
+
+### 学校服务器
+上传至服务器，配置 Web 服务器指向该目录即可。
+
+## 项目结构
+
+```
+isar2026/
+├── index.html           # 首页
+├── about.html           # 会议介绍
+├── organization.html    # 组织委员会
+├── call-for-papers.html # 征文通知
+├── program.html         # 会议日程
+├── speakers.html        # 大会报告人
+├── registration.html    # 会议注册
+├── contact.html         # 联系方式
+├── css/
+│   └── style.css        # 全局样式
+└── js/
+    ├── i18n.js          # 双语翻译数据
+    └── main.js          # 交互逻辑
+```

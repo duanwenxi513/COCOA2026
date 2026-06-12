@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页 - COCOA 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar-brand">
+      <span class="brand-icon">🔬</span> COCOA 2026
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+      <span class="menu-icon">☰</span>
+    </button>
+    <ul class="navbar-links" id="navbarLinks">
+      <li><a href="index.html" class="active" data-i18n="nav.home" data-page="home">首页</a></li>
+      <li><a href="about.html" data-i18n="nav.about" data-page="about">会议介绍</a></li>
+      <li><a href="organization.html" data-i18n="nav.organization" data-page="organization">组织委员会</a></li>
+      <li><a href="call-for-papers.html" data-i18n="nav.call_for_papers" data-page="cfp">征文通知</a></li>
+      <li><a href="program.html" data-i18n="nav.program" data-page="program">会议日程</a></li>
+      <li><a href="speakers.html" data-i18n="nav.speakers" data-page="speakers">大会报告人</a></li>
+      <li><a href="registration.html" data-i18n="nav.registration" data-page="registration">会议注册</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact" data-page="contact">联系方式</a></li>
+      <li class="lang-item"><button class="lang-switcher" id="langSwitch">EN</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 data-i18n="home.title">第十八届国际算法与应用研讨会</h1>
+        <p class="hero-subtitle" data-i18n="home.subtitle">The 18th International Symposium on Algorithms and Applications</p>
+        <div class="hero-info">
+          <span>📅 <span data-i18n="home.date">2026年12月15日 - 17日</span></span>
+          <span>📍 <span data-i18n="home.location">中国 · 北京</span></span>
+        </div>
+        <div class="hero-actions">
+          <a href="about.html" class="btn btn-outline" data-i18n="home.cta_learn">了解更多</a>
+          <a href="registration.html" class="btn btn-primary" data-i18n="home.cta_register">立即注册</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-icon">👥</div>
+        <div class="stat-count">30+</div>
+        <div class="stat-label" data-i18n="home.stats.speakers">大会报告人</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">📄</div>
+        <div class="stat-count">500+</div>
+        <div class="stat-label" data-i18n="home.stats.papers">投稿论文</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">🏫</div>
+        <div class="stat-count">50+</div>
+        <div class="stat-label" data-i18n="home.stats.countries">参会学校</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">📅</div>
+        <div class="stat-count">3</div>
+        <div class="stat-label" data-i18n="home.stats.days">会议天数</div>
+      </div>
+    </section>
+
+    <section class="section overview">
+      <div class="container">
+        <h2 data-i18n="home.overview_title">会议简介</h2>
+        <p data-i18n="home.overview_desc">第十八届国际算法与应用研讨会（COCOA 2026）将于2026年12月15日至17日在中国北京举行。本次会议旨在为国内外算法设计、组合优化及计算机应用领域的学者提供一个高水平的学术交流平台。会议涵盖主题报告、分组讨论、海报展示等多种形式，诚邀各位专家学者踊跃投稿、积极参会。会议论文集将由 Springer 出版社在 Lecture Notes in Computer Science (LNCS) 系列中出版。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <p data-i18n="footer.copyright">© 2026 国际算法与应用研讨会. 保留所有权利。</p>
+      <p class="footer-organizer" data-i18n="footer.organizer">主办单位：国际算法与应用研讨会组委会 · 承办单位：北京国际学术交流中心</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

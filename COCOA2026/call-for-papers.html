@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>征文通知 - COCOA 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar-brand"><span class="brand-icon">🔬</span> COCOA 2026</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单"><span class="menu-icon">☰</span></button>
+    <ul class="navbar-links" id="navbarLinks">
+      <li><a href="index.html" data-i18n="nav.home" data-page="home">首页</a></li>
+      <li><a href="about.html" data-i18n="nav.about" data-page="about">会议介绍</a></li>
+      <li><a href="organization.html" data-i18n="nav.organization" data-page="organization">组织委员会</a></li>
+      <li><a href="call-for-papers.html" class="active" data-i18n="nav.call_for_papers" data-page="cfp">征文通知</a></li>
+      <li><a href="program.html" data-i18n="nav.program" data-page="program">会议日程</a></li>
+      <li><a href="speakers.html" data-i18n="nav.speakers" data-page="speakers">大会报告人</a></li>
+      <li><a href="registration.html" data-i18n="nav.registration" data-page="registration">会议注册</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact" data-page="contact">联系方式</a></li>
+      <li class="lang-item"><button class="lang-switcher" id="langSwitch">EN</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <h1 data-i18n="cfp.title">征文通知</h1>
+      <p data-i18n="cfp.intro">COCOA 2026 诚邀国内外学者提交关于算法设计、组合优化及其应用领域的原创研究论文。除理论结果外，我们特别欢迎报告具有一般算法兴趣的实验与应用研究的投稿。</p>
+    </section>
+    <div class="container">
+      <section class="section">
+        <h2 data-i18n="cfp.topics_title">征稿主题（包括但不限于）</h2>
+        <div class="topics-grid">
+          <div class="topic-tag" data-i18n="cfp.topics.0">算法与数据结构</div>
+          <div class="topic-tag" data-i18n="cfp.topics.1">近似算法</div>
+          <div class="topic-tag" data-i18n="cfp.topics.2">运筹学</div>
+          <div class="topic-tag" data-i18n="cfp.topics.3">通信网络优化</div>
+          <div class="topic-tag" data-i18n="cfp.topics.4">图论与图搜索</div>
+          <div class="topic-tag" data-i18n="cfp.topics.5">计算几何</div>
+          <div class="topic-tag" data-i18n="cfp.topics.6">计算生物学与生物信息学</div>
+          <div class="topic-tag" data-i18n="cfp.topics.7">计算博弈论</div>
+          <div class="topic-tag" data-i18n="cfp.topics.8">调度理论与应用</div>
+          <div class="topic-tag" data-i18n="cfp.topics.9">人工智能与机器学习</div>
+          <div class="topic-tag" data-i18n="cfp.topics.10">大数据与数据科学</div>
+          <div class="topic-tag" data-i18n="cfp.topics.11">复杂网络优化</div>
+          <div class="topic-tag" data-i18n="cfp.topics.12">社交网络与城市交通网络</div>
+          <div class="topic-tag" data-i18n="cfp.topics.13">移动自组织网络</div>
+          <div class="topic-tag" data-i18n="cfp.topics.14">最优资源管理</div>
+          <div class="topic-tag" data-i18n="cfp.topics.15">分布式计算系统</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="cfp.dates_title">重要日期</h2>
+        <div class="dates-timeline">
+          <div class="date-item">
+            <div class="date-icon">📅</div>
+            <div class="date-info">
+              <strong data-i18n="cfp.submission_deadline">论文投稿截止</strong>
+              <span>2026-08-31 <em class="date-ext" data-i18n="cfp.submission_extended">(延后)</em></span>
+            </div>
+          </div>
+          <div class="date-item">
+            <div class="date-icon">✅</div>
+            <div class="date-info">
+              <strong data-i18n="cfp.notification_date">录用通知日期</strong>
+              <span>2026-10-01</span>
+            </div>
+          </div>
+          <div class="date-item">
+            <div class="date-icon">⏰</div>
+            <div class="date-info">
+              <strong data-i18n="cfp.camera_ready">终稿提交截止</strong>
+              <span>2026-10-10</span>
+            </div>
+          </div>
+          <div class="date-item">
+            <div class="date-icon">📅</div>
+            <div class="date-info">
+              <strong data-i18n="cfp.author_registration">作者注册截止</strong>
+              <span>2026-11-28</span>
+            </div>
+          </div>
+          <div class="date-item highlight">
+            <div class="date-icon">🎯</div>
+            <div class="date-info">
+              <strong data-i18n="cfp.conference_dates">会议日期</strong>
+              <span>2026-12-15 ~ 17</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="cfp.guidelines_title">论文投稿要求</h2>
+        <ul class="guidelines-list">
+          <li data-i18n="cfp.guidelines.0">投稿论文应包含学术思想、技术和结果的阐述，包括研究动机和与相关工作的清晰比较</li>
+          <li data-i18n="cfp.guidelines.1">论文长度不超过 12 页（LNCS 格式，含参考文献，不含可选附录）。Springer LNCS LaTeX 模板详见 <a href='https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj' target='_blank'>Overleaf</a></li>
+          <li data-i18n="cfp.guidelines.2">投稿论文必须描述此前未发表的工作，且不得同时投稿至其他有正式出版论文集的会议或期刊</li>
+          <li data-i18n="cfp.guidelines.3">本轮采用双盲审稿制度，请在提交时隐藏所有作者相关信息</li>
+          <li data-i18n="cfp.guidelines.4">仅接受 PDF 格式的电子投稿，请通过 EasyChair 在线投稿系统提交</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="cfp.awards_title">奖项设置</h2>
+        <p class="intro-text" data-i18n="cfp.awards.0">本届会议将评选最佳论文奖和最佳学生论文奖。若论文所有作者在投稿时均为全日制学生，则具备最佳学生论文奖参评资格。请在投稿系统网页表单的 "Abstract" 字段末尾以及论文中添加 "Eligible for best student paper" 以表明参评资格。</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <p data-i18n="footer.copyright">© 2026 国际算法与应用研讨会. 保留所有权利。</p>
+      <p class="footer-organizer" data-i18n="footer.organizer">主办单位：国际算法与应用研讨会组委会 · 承办单位：北京国际学术交流中心</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

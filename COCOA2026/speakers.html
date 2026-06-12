@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大会报告人 - COCOA 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar-brand"><span class="brand-icon">🔬</span> COCOA 2026</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单"><span class="menu-icon">☰</span></button>
+    <ul class="navbar-links" id="navbarLinks">
+      <li><a href="index.html" data-i18n="nav.home" data-page="home">首页</a></li>
+      <li><a href="about.html" data-i18n="nav.about" data-page="about">会议介绍</a></li>
+      <li><a href="organization.html" data-i18n="nav.organization" data-page="organization">组织委员会</a></li>
+      <li><a href="call-for-papers.html" data-i18n="nav.call_for_papers" data-page="cfp">征文通知</a></li>
+      <li><a href="program.html" data-i18n="nav.program" data-page="program">会议日程</a></li>
+      <li><a href="speakers.html" class="active" data-i18n="nav.speakers" data-page="speakers">大会报告人</a></li>
+      <li><a href="registration.html" data-i18n="nav.registration" data-page="registration">会议注册</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact" data-page="contact">联系方式</a></li>
+      <li class="lang-item"><button class="lang-switcher" id="langSwitch">EN</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <h1 data-i18n="speakers.title">大会报告人</h1>
+      <p data-i18n="speakers.subtitle">来自全球顶尖学术机构的专家学者</p>
+    </section>
+    <div class="container">
+      <!-- Keynote Speakers -->
+      <section class="section">
+        <h2 data-i18n="speakers.keynote_title">大会主题报告人</h2>
+
+        <div class="speaker-detail">
+          <div class="speaker-detail-avatar">S</div>
+          <div class="speaker-detail-info">
+            <h3>Prof. Shi Li</h3>
+            <p class="speaker-affiliation">Professor, Nanjing University, China</p>
+            <p class="speaker-title">Title: Configuration LP and Iterative Rounding for Scheduling and Resource Allocation</p>
+            <p class="speaker-abstract"><strong>Abstract:</strong> In this talk, I will present the use of the Configuration Linear Program (Configuration LP) in designing approximation algorithms for two seemingly unrelated problem domains: fair resource allocation and scheduling. A key technical theme is the use of randomized rounding on fractional bipartite matchings derived from the LP to obtain the final solution. In the context of fair resource allocation, I will present our work on the weighted Nash Social Welfare (NSW) problem. We resolve two long-standing open problems by delivering a e^{1/e}-approximation for additive valuations, which matches the ratio for the unweighted version of the problem, and the first constant-factor approximation for submodular valuations. For scheduling, I will introduce a novel iterative rounding algorithm for unrelated machine scheduling with the weighted completion time objective, achieving a 1.36-approximation.</p>
+            <p class="speaker-bio"><strong>Bio:</strong> Shi Li is a professor at the School of Computer Science at Nanjing University. He completed his undergraduate study at Tsinghua University and earned his Ph.D. from Princeton University. He later served as a Research Assistant Professor at the Toyota Technological Institute at Chicago, then joined the State University of New York at Buffalo as an Assistant Professor and was promoted to Associate Professor in 2020. He joined Nanjing University in 2023. His research has been published in top journals such as JACM, SICOMP, and I&C, as well as more than 30 papers in FOCS, STOC, and SODA.</p>
+          </div>
+        </div>
+
+        <div class="speaker-detail">
+          <div class="speaker-detail-avatar">A</div>
+          <div class="speaker-detail-info">
+            <h3>Prof. Argyrios Deligkas</h3>
+            <p class="speaker-affiliation">Associate Professor, Royal Holloway, University of London, UK</p>
+            <p class="speaker-title">Title: Recent Advances in Equilibrium Computation</p>
+            <p class="speaker-abstract"><strong>Abstract:</strong> Nash equilibrium is the standard solution concept in game theory since it provides predictions for the behavior of interacting agents. One of the most fundamental problems in the field is to find a Nash equilibrium of a game. Recent advances include improved upper bounds in two-player games and new, much stronger, and in some cases tight, lower bounds in many player games. The talk will explain: (a) the recently proposed framework of Pure-Circuit that has improved the accessibility and understanding on the topic; (b) the improved upper bounds in bimatrix games; and (c) will highlight some important open problems.</p>
+            <p class="speaker-bio"><strong>Bio:</strong> Argyrios Deligkas is an Associate Professor in the Department of Computer Science at Royal Holloway University of London. He has previously held postdoctoral positions at the University of Liverpool (2018-2020) and at the Technion Institute of Technology (2016-2018). He completed his PhD at the University of Liverpool. His research interests lie in the fields of Algorithmic Game Theory, Mechanism Design, Temporal Graphs, and Fair Division.</p>
+          </div>
+        </div>
+
+        <div class="speaker-detail">
+          <div class="speaker-detail-avatar">K</div>
+          <div class="speaker-detail-info">
+            <h3>Prof. Kai Chen</h3>
+            <p class="speaker-affiliation">Professor, Tsinghua University, China</p>
+            <p class="speaker-title">Title: Algorithm Design for AI-driven Drug Discovery</p>
+            <p class="speaker-abstract"><strong>Abstract:</strong> This talk explores the intersection of algorithm design and artificial intelligence in accelerating drug discovery pipelines. We discuss novel combinatorial optimization approaches for molecular docking, virtual screening, and de novo drug design, highlighting recent breakthroughs in graph neural networks and reinforcement learning for pharmaceutical applications.</p>
+            <p class="speaker-bio"><strong>Bio:</strong> Kai Chen is a professor at the Department of Computer Science and Technology at Tsinghua University. His research focuses on machine learning, computational biology, and algorithm design. He has published extensively in top-tier venues including NeurIPS, ICML, and Nature Communications.</p>
+          </div>
+        </div>
+
+        <div class="speaker-detail">
+          <div class="speaker-detail-avatar">R</div>
+          <div class="speaker-detail-info">
+            <h3>Prof. Robert Miller</h3>
+            <p class="speaker-affiliation">Professor, MIT, USA</p>
+            <p class="speaker-title">Title: Network Optimization in the Era of Big Data</p>
+            <p class="speaker-abstract"><strong>Abstract:</strong> Modern network optimization problems face unprecedented scale and complexity. This talk surveys recent advances in approximation algorithms and heuristic methods for large-scale network design, routing, and resource allocation problems arising from cloud computing, 5G networks, and intelligent transportation systems.</p>
+            <p class="speaker-bio"><strong>Bio:</strong> Robert Miller is a professor at MIT's Department of Electrical Engineering and Computer Science. He is a fellow of ACM and IEEE, with research spanning theoretical computer science, network optimization, and distributed systems. He has received numerous awards including the ACM Prize in Computing.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <p data-i18n="footer.copyright">© 2026 国际算法与应用研讨会. 保留所有权利。</p>
+      <p class="footer-organizer" data-i18n="footer.organizer">主办单位：国际算法与应用研讨会组委会 · 承办单位：北京国际学术交流中心</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

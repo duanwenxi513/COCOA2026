@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>会议日程 - COCOA 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar-brand"><span class="brand-icon">🔬</span> COCOA 2026</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单"><span class="menu-icon">☰</span></button>
+    <ul class="navbar-links" id="navbarLinks">
+      <li><a href="index.html" data-i18n="nav.home" data-page="home">首页</a></li>
+      <li><a href="about.html" data-i18n="nav.about" data-page="about">会议介绍</a></li>
+      <li><a href="organization.html" data-i18n="nav.organization" data-page="organization">组织委员会</a></li>
+      <li><a href="call-for-papers.html" data-i18n="nav.call_for_papers" data-page="cfp">征文通知</a></li>
+      <li><a href="program.html" class="active" data-i18n="nav.program" data-page="program">会议日程</a></li>
+      <li><a href="speakers.html" data-i18n="nav.speakers" data-page="speakers">大会报告人</a></li>
+      <li><a href="registration.html" data-i18n="nav.registration" data-page="registration">会议注册</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact" data-page="contact">联系方式</a></li>
+      <li class="lang-item"><button class="lang-switcher" id="langSwitch">EN</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <h1 data-i18n="program.title">会议日程</h1>
+    </section>
+    <div class="container">
+      <section class="section">
+        <h2 data-i18n="program.day1">第一天 (12月15日)</h2>
+        <div class="schedule-table-wrapper">
+          <table class="schedule-table">
+            <thead><tr><th data-i18n="program.time">时间</th><th data-i18n="program.event">活动</th><th data-i18n="program.location_col">地点</th></tr></thead>
+            <tbody>
+              <tr><td class="time-col">08:00-09:00</td><td data-i18n="program.registration_open">签到注册</td><td>Main Hall</td></tr>
+              <tr><td class="time-col">09:00-09:30</td><td data-i18n="program.opening">开幕式</td><td>Auditorium A</td></tr>
+              <tr><td class="time-col">09:30-12:00</td><td data-i18n="program.keynote">大会主题报告</td><td>Auditorium A</td></tr>
+              <tr><td class="time-col">12:00-13:30</td><td data-i18n="program.lunch">午餐</td><td>Dining Hall</td></tr>
+              <tr><td class="time-col">13:30-17:00</td><td data-i18n="program.session">分组报告</td><td>Rooms 101-108</td></tr>
+              <tr><td class="time-col">18:00-20:00</td><td data-i18n="program.banquet">晚宴</td><td>Grand Ballroom</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="section">
+        <h2 data-i18n="program.day2">第二天 (12月16日)</h2>
+        <div class="schedule-table-wrapper">
+          <table class="schedule-table">
+            <thead><tr><th data-i18n="program.time">时间</th><th data-i18n="program.event">活动</th><th data-i18n="program.location_col">地点</th></tr></thead>
+            <tbody>
+              <tr><td class="time-col">09:00-10:30</td><td data-i18n="program.keynote">大会主题报告</td><td>Auditorium A</td></tr>
+              <tr><td class="time-col">10:30-12:00</td><td data-i18n="program.session">分组报告</td><td>Rooms 101-108</td></tr>
+              <tr><td class="time-col">12:00-13:30</td><td data-i18n="program.lunch">午餐</td><td>Dining Hall</td></tr>
+              <tr><td class="time-col">13:30-15:00</td><td data-i18n="program.session">分组报告</td><td>Rooms 101-108</td></tr>
+              <tr><td class="time-col">15:00-17:00</td><td data-i18n="program.poster">海报展示</td><td>Exhibition Hall</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="section">
+        <h2 data-i18n="program.day3">第三天 (12月17日)</h2>
+        <div class="schedule-table-wrapper">
+          <table class="schedule-table">
+            <thead><tr><th data-i18n="program.time">时间</th><th data-i18n="program.event">活动</th><th data-i18n="program.location_col">地点</th></tr></thead>
+            <tbody>
+              <tr><td class="time-col">09:00-11:00</td><td data-i18n="program.session">分组报告</td><td>Rooms 101-108</td></tr>
+              <tr><td class="time-col">11:00-12:00</td><td data-i18n="program.closing">闭幕式 & 颁奖</td><td>Auditorium A</td></tr>
+              <tr><td class="time-col">12:00-13:30</td><td data-i18n="program.lunch">午餐</td><td>Dining Hall</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <p data-i18n="footer.copyright">© 2026 国际算法与应用研讨会. 保留所有权利。</p>
+      <p class="footer-organizer" data-i18n="footer.organizer">主办单位：国际算法与应用研讨会组委会 · 承办单位：北京国际学术交流中心</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

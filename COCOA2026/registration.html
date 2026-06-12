@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>会议注册 - COCOA 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar-brand"><span class="brand-icon">🔬</span> COCOA 2026</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单"><span class="menu-icon">☰</span></button>
+    <ul class="navbar-links" id="navbarLinks">
+      <li><a href="index.html" data-i18n="nav.home" data-page="home">首页</a></li>
+      <li><a href="about.html" data-i18n="nav.about" data-page="about">会议介绍</a></li>
+      <li><a href="organization.html" data-i18n="nav.organization" data-page="organization">组织委员会</a></li>
+      <li><a href="call-for-papers.html" data-i18n="nav.call_for_papers" data-page="cfp">征文通知</a></li>
+      <li><a href="program.html" data-i18n="nav.program" data-page="program">会议日程</a></li>
+      <li><a href="speakers.html" data-i18n="nav.speakers" data-page="speakers">大会报告人</a></li>
+      <li><a href="registration.html" class="active" data-i18n="nav.registration" data-page="registration">会议注册</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact" data-page="contact">联系方式</a></li>
+      <li class="lang-item"><button class="lang-switcher" id="langSwitch">EN</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <h1 data-i18n="registration.title">会议注册</h1>
+      <p data-i18n="registration.subtitle">请填写以下信息完成会议注册。如有疑问，请发送邮件至 cocoa2026@example.org</p>
+    </section>
+    <div class="container">
+      <!-- Registration Note -->
+      <section class="section">
+        <p class="intro-text" style="background:#fef3c7;padding:16px 24px;border-radius:8px;text-align:left;border-left:4px solid var(--accent);" data-i18n="registration.note">注：每篇录用论文至少需有一位作者完成全额注册。非论文作者的参会者也可注册会议，享有同等的会场权益。请留意注册截止日期。</p>
+      </section>
+
+      <!-- Fee Table -->
+      <section class="section">
+        <h2 data-i18n="registration.fee_title">注册费用（海外参会者）</h2>
+        <div class="schedule-table-wrapper">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th data-i18n="registration.category">类别</th>
+                <th data-i18n="registration.early_bird_label">早鸟注册（2026年11月15日或之前）</th>
+                <th data-i18n="registration.late_label">普通/现场注册（2026年11月15日之后）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="registration.full">全额注册</td>
+                <td data-i18n="registration.fee_full_early">USD $500</td>
+                <td data-i18n="registration.fee_full_late">USD $550</td>
+              </tr>
+              <tr>
+                <td data-i18n="registration.pc_student">程序委员会委员或学生注册</td>
+                <td data-i18n="registration.fee_pc_early">USD $250</td>
+                <td data-i18n="registration.fee_pc_late">USD $300</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="margin-top:40px;" data-i18n="registration.china_title">中国参会者（需要国内发票）</h2>
+        <div class="schedule-table-wrapper">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th data-i18n="registration.category">类别</th>
+                <th data-i18n="registration.early_bird_label">早鸟注册（2026年11月15日或之前）</th>
+                <th data-i18n="registration.late_label">普通/现场注册（2026年11月15日之后）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="registration.full">全额注册</td>
+                <td data-i18n="registration.fee_full_early">人民币 3600</td>
+                <td data-i18n="registration.fee_full_late">人民币 4000</td>
+              </tr>
+              <tr>
+                <td data-i18n="registration.pc_student">程序委员会委员或学生注册</td>
+                <td data-i18n="registration.fee_pc_early">人民币 1800</td>
+                <td data-i18n="registration.fee_pc_late">人民币 2000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Payment -->
+      <section class="section">
+        <h2 data-i18n="registration.payment_title">支付方式</h2>
+        <p class="intro-text" data-i18n="registration.payment_desc">请通过银行转账或微信扫码完成缴费，转账时请备注 "ISAA2026 + 姓名 + 论文编号（如有）"。注册费用包含：所有会议场次入场券、宴会券、自助餐券、茶歇及会议纪念品。</p>
+        <p class="intro-text" style="font-family:monospace;background:var(--bg-light);padding:16px;border-radius:8px;text-align:left;margin-top:12px;" data-i18n="registration.bank_info">开户行：中国工商银行北京学院路支行 / 账号：3400 2023 1930 0138 442 / 户名：北京国际学术交流中心</p>
+      </section>
+
+      <!-- Registration Form -->
+      <section class="section">
+        <h2 data-i18n="registration.subtitle">请填写以下信息完成会议注册</h2>
+        <form class="registration-form" id="registrationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label><span data-i18n="registration.name">姓名</span> <span class="required">*</span></label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label><span data-i18n="registration.email">电子邮箱</span> <span class="required">*</span></label>
+              <input type="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="registration.affiliation">所属机构</label>
+              <input type="text" name="affiliation">
+            </div>
+            <div class="form-group">
+              <label data-i18n="registration.position">职称/身份</label>
+              <input type="text" name="position">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label><span data-i18n="registration.type">注册类型</span> <span class="required">*</span></label>
+              <select name="type" required>
+                <option value="">--</option>
+                <option value="student" data-i18n="registration.type_student">学生代表</option>
+                <option value="regular" data-i18n="registration.type_regular">普通代表</option>
+                <option value="early" data-i18n="registration.type_early">早鸟注册</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-i18n="registration.paper_id">论文编号（如有）</label>
+              <input type="text" name="paper_id">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="registration.dietary">饮食偏好</label>
+              <select name="dietary">
+                <option value="" data-i18n="registration.dietary_none">无特殊要求</option>
+                <option value="vegetarian" data-i18n="registration.dietary_vegetarian">素食</option>
+                <option value="halal" data-i18n="registration.dietary_halal">清真</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-i18n="registration.remarks">备注</label>
+            <textarea name="remarks" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" data-i18n="registration.submit">提交注册</button>
+        </form>
+        <div class="success-message" id="successMessage" style="display:none;">
+          <div style="font-size:64px;">✅</div>
+          <h2 data-i18n="registration.success">注册成功！我们会尽快通过邮件与您联系确认。</h2>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <p data-i18n="footer.copyright">© 2026 国际算法与应用研讨会. 保留所有权利。</p>
+      <p class="footer-organizer" data-i18n="footer.organizer">主办单位：国际算法与应用研讨会组委会 · 承办单位：北京国际学术交流中心</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

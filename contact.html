@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系方式 - COCOA 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar-brand">COCOA 2026</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单"><span class="menu-icon">☰</span></button>
+    <ul class="navbar-links" id="navbarLinks">
+      <li><a href="index.html" data-i18n="nav.home" data-page="home">首页</a></li>
+      <li><a href="about.html" data-i18n="nav.about" data-page="about">会议介绍</a></li>
+      <li><a href="organization.html" data-i18n="nav.organization" data-page="organization">组织委员会</a></li>
+      <li><a href="call-for-papers.html" data-i18n="nav.call_for_papers" data-page="cfp">征文通知</a></li>
+      <li><a href="program.html" data-i18n="nav.program" data-page="program">会议日程</a></li>
+      <li><a href="news.html" data-i18n="nav.news" data-page="news">会议新闻</a></li>
+      <li><a href="speakers.html" data-i18n="nav.speakers" data-page="speakers">大会报告人</a></li>
+      <li><a href="registration.html" data-i18n="nav.registration" data-page="registration">会议注册</a></li>
+      <li><a href="contact.html" class="active" data-i18n="nav.contact" data-page="contact">联系方式</a></li>
+      <li class="lang-item"><button class="lang-switcher" id="langSwitch">EN</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <h1 data-i18n="contact.title">联系方式</h1>
+    </section>
+    <div class="container">
+      <section class="section">
+        <p class="intro-text" data-i18n="contact.questions">如有任何疑问或建议，欢迎通过以下方式联系我们：</p>
+      </section>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div style="font-size:32px;"></div>
+          <h3 data-i18n="contact.address">北京市海淀区学院路100号</h3>
+        </div>
+        <div class="contact-card">
+          <div style="font-size:32px;"></div>
+          <h3 data-i18n="contact.email_label">电子邮箱</h3>
+          <p>cocoa2026@example.org</p>
+          <p style="margin-top:8px;font-size:13px;" data-i18n="contact.conference">如有会议相关问题，请发送邮件至：</p>
+          <p style="font-size:14px;font-weight:600;">cocoa2026@example.org</p>
+        </div>
+        <div class="contact-card">
+          <div style="font-size:32px;"></div>
+          <h3 data-i18n="contact.phone_label">联系电话</h3>
+          <p>+86-10-6441-2701</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-content">
+      <p data-i18n="footer.copyright">© 2026 国际算法与应用研讨会. 保留所有权利。</p>
+      <p class="footer-organizer" data-i18n="footer.organizer">主办单位：国际算法与应用研讨会组委会 · 承办单位：北京国际学术交流中心</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
